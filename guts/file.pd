@@ -1,0 +1,12 @@
+#N canvas 104 383 450 300 10;
+#X obj 128 178 soundfiler;
+#X obj 128 78 openpanel;
+#X msg 128 149 read -resize \$1 \$2_neko;
+#X obj 128 129 pack s f;
+#X obj 173 106 r last_note;
+#X obj 128 32 inlet;
+#X connect 1 0 3 0;
+#X connect 2 0 0 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 1;
+#X connect 5 0 1 0;
